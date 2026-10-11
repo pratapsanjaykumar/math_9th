@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Mathematics (Ganita Manjari) Syllabus Portal | By Pratap Sanjay Sir</title>
+    <meta name="description" content="Complete Class 9 Mathematics Ganita Manjari syllabus portal by Pratap Sanjay Sir. Direct chapter links (math_1 to math_14), official NCERT chapter PDFs, and interactive revision tools.">
+    <meta name="keywords" content="Class 9 Maths, Ganita Manjari NCERT, Pratap Sanjay Sir, Class 9 Maths Syllabus, Coordinates, Polynomials, Circles, 3D Mensuration">
+    <meta name="author" content="Pratap Sanjay Sir">
+
+    <!-- Open Graph & Meta -->
+    <meta property="og:title" content="Class 9 Mathematics (Ganita Manjari) Portal | Pratap Sanjay Sir">
+    <meta property="og:description" content="Official NCERT Chapter PDFs, Class Study Notes (math_1 to math_14), and interactive tools for Class 9 Maths.">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-heading { font-family: 'Outfit', sans-serif; }
+        code, .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+        .glass-card {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 9999px;
+        }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #475569;
+        }
+
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white !important; color: black !important; }
+            .chapter-card { break-inside: avoid; border: 1px solid #e2e8f0 !important; box-shadow: none !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-200">
+
+    <!-- Top Notice & Reading Progress -->
+    <div class="fixed top-0 left-0 w-full h-1 bg-slate-200 dark:bg-slate-800 z-[70] no-print">
+        <div id="syllabus-progress-bar" class="h-full bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 w-0 transition-all duration-300"></div>
+    </div>
+
+    <header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800/80 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="#" class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-600 text-white flex items-center justify-center shadow-md shadow-indigo-500/20 hover:scale-105 transition transform">
+                    <i class="fa-solid fa-shapes text-lg"></i>
+                </a>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-[10px] font-extrabold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 px-2 py-0.5 rounded-full border border-indigo-200/50 dark:border-indigo-800/50">
+                            NCERT 2026-27 • Ganita Manjari
+                        </span>
+                    </div>
+                    <h1 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white leading-tight">
+                        Class 9 Mathematics Portal <span class="hidden sm:inline font-normal text-xs text-slate-500 dark:text-slate-400">| Pratap Sanjay Sir</span>
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Header Quick Action Bar -->
+            <div class="flex items-center gap-2">
+                <a href="#quick-tools" class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+                    <i class="fa-solid fa-calculator text-indigo-500"></i> Math Tools
+                </a>
+                <button onclick="toggleDarkMode()" class="p-2.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition" title="Toggle Dark/Light Mode">
+                    <i class="fa-solid fa-moon text-lg dark:hidden"></i>
+                    <i class="fa-solid fa-sun text-lg hidden dark:block text-amber-400"></i>
+                </button>
+                <button onclick="window.print()" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold text-white bg-slate-800 hover:bg-slate-900 dark:bg-slate-700 dark:hover:bg-slate-600 shadow-sm transition">
+                    <i class="fa-solid fa-print"></i> Print Syllabus
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6 w-full">
+
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-900 via-slate-900 to-slate-950 text-white p-6 sm:p-10 shadow-2xl border border-indigo-500/20">
+            <div class="relative z-10 max-w-3xl space-y-4">
+                <div class="flex flex-wrap items-center gap-2">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-400 text-slate-950 shadow-sm">
+                        <i class="fa-solid fa-chalkboard-user"></i> By Pratap Sanjay Sir
+                    </span>
+                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium bg-white/10 backdrop-blur-md text-indigo-200">
+                        <i class="fa-solid fa-book-open"></i> Complete NCERT Course: Part I & II
+                    </span>
+                    <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                        <i class="fa-solid fa-circle-check"></i> 14 Chapters Active
+                    </span>
+                </div>
+
+                <h1 class="text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
+                    Class 9 Mathematics <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-sky-300 to-indigo-300">Ganita Manjari</span>
+                </h1>
+                
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Syllabus Portal: Direct class study notes links (<code>math_1</code> to <code>math_14</code>), official NCERT chapter PDFs, and instant revision tracker.
+                </p>
+
+                <!-- Dynamic Progress Stats Bar -->
+                <div class="pt-2 bg-slate-900/60 rounded-2xl p-4 border border-indigo-500/20 backdrop-blur-sm">
+                    <div class="flex items-center justify-between text-xs sm:text-sm font-semibold mb-2">
+                        <span class="flex items-center gap-2 text-indigo-300">
+                            <i class="fa-solid fa-list-check"></i> Syllabus Completion Status
+                        </span>
+                        <span id="progress-percent" class="text-amber-400 font-bold">0% Completed (0/14)</span>
+                    </div>
+                    <div class="w-full bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                        <div id="stat-progress-bar" class="bg-gradient-to-r from-indigo-500 to-emerald-400 h-full w-0 transition-all duration-500"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background Geometry Decorative Vectors -->
+            <div class="absolute -right-12 -bottom-12 opacity-10 pointer-events-none text-indigo-200">
+                <i class="fa-solid fa-compass-drafting text-[320px]"></i>
+            </div>
+        </section>
+
+        <section class="bg-white dark:bg-slate-900 rounded-2xl p-4 shadow-sm border border-slate-200/80 dark:border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 no-print">
+            
+            <!-- Term Selector Pills -->
+            <div class="flex items-center gap-1.5 p-1 bg-slate-100 dark:bg-slate-800 rounded-xl w-full md:w-auto">
+                <button onclick="filterTerm('all')" id="tab-all" class="flex-1 md:flex-initial px-4 py-2 rounded-lg text-xs font-bold transition shadow-sm bg-indigo-600 text-white">
+                    All (14)
+                </button>
+                <button onclick="filterTerm('part1')" id="tab-part1" class="flex-1 md:flex-initial px-4 py-2 rounded-lg text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition">
+                    Part I (Ch 1–8)
+                </button>
+                <button onclick="filterTerm('part2')" id="tab-part2" class="flex-1 md:flex-initial px-4 py-2 rounded-lg text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition">
+                    Part II (Ch 9–14)
+                </button>
+            </div>
+
+            <!-- Instant Search Input -->
+            <div class="relative w-full md:w-80">
+                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+                <input type="text" id="chapter-search" oninput="handleSearch()" placeholder="Search chapter, topic, formula..." class="w-full pl-9 pr-8 py-2 rounded-xl text-xs bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <button onclick="clearSearch()" id="clear-search-btn" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xs">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-center justify-between mb-4">
+                <h2 id="current-view-heading" class="text-xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-indigo-500"></i> Full Curriculum Overview
+                </h2>
+                <span id="results-count" class="text-xs font-semibold text-slate-500 dark:text-slate-400">
+                    Showing 14 Chapters
+                </span>
+            </div>
+
+            <!-- Dynamic Cards Grid -->
+            <div id="chapters-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Chapters will be rendered dynamically by JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <div id="chapter-modal" class="fixed inset-0 z-[100] bg-slate-950/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-slate-900 rounded-3xl max-w-2xl w-full p-6 shadow-2xl border border-slate-200 dark:border-slate-800 space-y-5 animate-scale-up">
+            <div class="flex items-start justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+                <div>
+                    <span id="modal-term-badge" class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400"></span>
+                    <h3 id="modal-title" class="text-xl font-bold text-slate-900 dark:text-white mt-1"></h3>
+                    <p id="modal-subtitle" class="text-xs text-slate-500 dark:text-slate-400"></p>
+                </div>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-2 rounded-lg">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <div class="space-y-4 text-xs sm:text-sm">
+                <div>
+                    <h4 class="font-bold text-slate-800 dark:text-slate-200 mb-1 flex items-center gap-1.5">
+                        <i class="fa-solid fa-bullseye text-amber-500"></i> Core Learning Objectives
+                    </h4>
+                    <p id="modal-objectives" class="text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-slate-800 dark:text-slate-200 mb-1 flex items-center gap-1.5">
+                        <i class="fa-solid fa-square-root-variable text-indigo-500"></i> Formulas & Key Mathematical Theorems
+                    </h4>
+                    <div id="modal-formulas" class="p-3 bg-slate-50 dark:bg-slate-800/80 rounded-xl font-mono text-xs text-indigo-700 dark:text-indigo-300 border border-slate-200/80 dark:border-slate-700"></div>
+                </div>
+
+                <div class="p-3 bg-amber-50 dark:bg-amber-950/40 rounded-xl border border-amber-200 dark:border-amber-800/60 text-amber-900 dark:text-amber-200">
+                    <span class="font-bold flex items-center gap-1.5 text-xs">
+                        <i class="fa-solid fa-lightbulb"></i> Pratap Sanjay Sir's Exam Tip
+                    </span>
+                    <p id="modal-tip" class="text-xs mt-1 leading-relaxed"></p>
+                </div>
+            </div>
+
+            <!-- Modal Action Buttons (Dual Links) -->
+            <div class="pt-2 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                    <a id="modal-portal-btn" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs flex items-center gap-2 shadow-sm transition">
+                        <i class="fa-solid fa-chalkboard-user"></i> Open Portal Notes
+                    </a>
+                    <a id="modal-pdf-btn" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs flex items-center gap-2 shadow-sm transition">
+                        <i class="fa-solid fa-file-pdf"></i> Download NCERT PDF
+                    </a>
+                </div>
+                <button onclick="closeModal()" class="px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 font-bold text-xs hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-8 mt-12 text-center text-xs text-slate-500 dark:text-slate-400 no-print">
+        <div class="max-w-7xl mx-auto px-4 space-y-2">
+            <p class="font-bold text-slate-800 dark:text-slate-200 text-sm">
+                Class 9 Mathematics (<span class="italic text-indigo-600 dark:text-indigo-400">Ganita Manjari</span>) Official Study Portal
+            </p>
+            <p>Guided & Curated by Pratap Sanjay Sir • Complete NCERT Alignment for CBSE Students</p>
+            <p class="text-[11px] text-slate-400 dark:text-slate-500">
+                Direct NCERT Textbook Server PDFs & Portal Revision Series (math_1 to math_14) • &copy; <span class="dynamic-session">2026-27</span> All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Complete 14 Chapters Dataset for Class 9 Ganita Manjari
+        const chaptersData = [
+            // PART I (Chapters 1 to 8) - NCERT Code: iemh101 to iemh108
+            {
+                id: 1,
+                part: 1,
+                partLabel: "Part I: Foundational Concepts (Term 1)",
+                title: "Orienting Yourself: Coordinates",
+                subtitle: "Cartesian plane & distances",
+                category: "Geometry",
+                icon: "fa-compass-drafting",
+                color: "indigo",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_1",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh101.pdf",
+                objectives: "Understanding the origin (0,0), axes (x, y), coordinate grids, quadrants I-IV, and representing locations numerically in 2D space.",
+                formulas: "Distance from origin d = √(x² + y²)\nCoordinates: P(x, y) where x = abscissa, y = ordinate",
+                tip: "Always remember: in the Cartesian plane, order matters! (x, y) ≠ (y, x) unless x = y."
+            },
+            {
+                id: 2,
+                part: 1,
+                partLabel: "Part I: Foundational Concepts (Term 1)",
+                title: "Linear Polynomials",
+                subtitle: "Degree & linear growth",
+                category: "Algebra",
+                icon: "fa-chart-line",
+                color: "blue",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_2",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh102.pdf",
+                objectives: "Explore standard form P(x) = ax + b (a ≠ 0), degree of polynomials, zeroes of linear polynomials, and constant rate of growth.",
+                formulas: "Standard Form: P(x) = ax + b (a ≠ 0)\nZero of linear polynomial: x = -b / a",
+                tip: "A polynomial of degree 1 has exactly one real zero. Notice how it relates to linear growth rate a."
+            },
+            {
+                id: 3,
+                part: 1,
+                partLabel: "Part I: Foundational Concepts (Term 1)",
+                title: "The World of Numbers",
+                subtitle: "Rational & irrational proofs",
+                category: "Number Systems",
+                icon: "fa-cubes-stacked",
+                color: "emerald",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_3",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh103.pdf",
+                objectives: "Investigate terminating and recurring decimals, non-terminating non-repeating numbers, proofs of irrationality (√2, √3), and real number line representations.",
+                formulas: "Rational: p/q (q ≠ 0, p,q ∈ Z)\nIrrational: Decimal expansion non-terminating non-repeating\nLaw: (√a + √b)(√a - √b) = a - b",
+                tip: "Contradiction method is essential: assume √2 = p/q in lowest terms, and deduce both p and q are divisible by 2!"
+            },
+            {
+                id: 4,
+                part: 1,
+                partLabel: "Part I: Foundational Concepts (Term 1)",
+                title: "Algebraic Identities",
+                subtitle: "Factorisation & geometric tiles",
+                category: "Algebra",
+                icon: "fa-shapes",
+                color: "amber",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_4",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh104.pdf",
+                objectives: "Geometric decomposition of algebraic squares and cubes, factorisation of quadratics and cubics using tiles and identities.",
+                formulas: "(a + b)² = a² + 2ab + b²\n(a - b)² = a² - 2ab + b²\na² - b² = (a - b)(a + b)\n(a + b + c)² = a² + b² + c² + 2ab + 2bc + 2ca",
+                tip: "Visualise (a + b)² as a large square of side (a+b) partitioned into 1 square a², 1 square b², and two rectangles ab!"
+            },
+            {
+                id: 5,
+                part: 1,
+                partLabel: "Part I: Foundational Concepts (Term 1)",
+                title: "Circles: Up & Down & Round",
+                subtitle: "Chords & cyclic quadrilaterals",
+                category: "Geometry",
+                icon: "fa-circle-notch",
+                color: "violet",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_5",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh105.pdf",
+                objectives: "Circle geometry, perpendicular bisector of a chord, equal chords and their distances from center, angle subtended by arcs, and cyclic quadrilaterals.",
+                formulas: "Angle subtended at center = 2 × Angle subtended at circumference\nCyclic Quad: Sum of opposite angles ∠A + ∠C = 180°",
+                tip: "Angles in the same segment of a circle are equal. Angle in a semi-circle is always 90°!"
+            },
+            {
+                id: 6,
+                part: 1,
+                partLabel: "Part I: Foundational Concepts (Term 1)",
+                title: "Measuring Space: Perimeter & Area",
+                subtitle: "Heron's & Brahmagupta's formula",
+                category: "Mensuration",
+                icon: "fa-draw-polygon",
+                color: "teal",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_6",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh106.pdf",
+                objectives: "Calculation of area of arbitrary triangles with known side lengths, semi-perimeter properties, and extension to cyclic quadrilaterals.",
+                formulas: "s = (a + b + c) / 2\nHeron's Area = √[s(s - a)(s - b)(s - c)]\nBrahmagupta's Area for Cyclic Quad = √[(s-a)(s-b)(s-c)(s-d)]",
+                tip: "Before applying Heron's formula, verify the triangle inequality: the sum of any two sides must strictly exceed the third side."
+            },
+            {
+                id: 7,
+                part: 1,
+                partLabel: "Part I: Foundational Concepts (Term 1)",
+                title: "The Mathematics of Maybe",
+                subtitle: "Probability & tree diagrams",
+                category: "Probability",
+                icon: "fa-dice",
+                color: "rose",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_7",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh107.pdf",
+                objectives: "Empirical vs theoretical probability, sample spaces, outcomes of coins, dice, cards, and event tree diagrams.",
+                formulas: "P(E) = Number of favourable outcomes / Total possible outcomes\n0 ≤ P(E) ≤ 1 and P(E) + P(not E) = 1",
+                tip: "Probability can never be negative or exceed 1! Always write out the clear sample space S before computing."
+            },
+            {
+                id: 8,
+                part: 1,
+                partLabel: "Part I: Foundational Concepts (Term 1)",
+                title: "Predicting What Comes Next",
+                subtitle: "Sequences, AP & recursions",
+                category: "Sequences",
+                icon: "fa-arrow-trend-up",
+                color: "cyan",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_8",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh108.pdf",
+                objectives: "Recognizing number patterns, constant differences, arithmetic progression (AP), nth term expression, and recursive relationships.",
+                formulas: "AP General Form: a, a+d, a+2d, ...\nn-th term: Tₙ = a + (n - 1)d\nSum of n terms: Sₙ = (n / 2)[2a + (n - 1)d]",
+                tip: "Common difference d can be positive, negative, or zero! Check d = T₂ - T₁ = T₃ - T₂."
+            },
+
+            // PART II (Chapters 9 to 14) - NCERT Code: iemh201 to iemh206
+            {
+                id: 9,
+                part: 2,
+                partLabel: "Part II: Applied & Thematic (Term 2)",
+                title: "Propositions and Converses",
+                subtitle: "Mathematical logic & proofs",
+                category: "Logic & Proofs",
+                icon: "fa-lightbulb",
+                color: "indigo",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_9",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh201.pdf",
+                objectives: "Structure of mathematical statements, 'If P, then Q', converse 'If Q, then P', contrapositive, and finding counterexamples.",
+                formulas: "Implication: P ⇒ Q\nConverse: Q ⇒ P (Not automatically true!)\nContrapositive: ~Q ⇒ ~P (Logically equivalent to P ⇒ Q)",
+                tip: "To disprove a universal mathematical proposition, finding just ONE counterexample is completely sufficient!"
+            },
+            {
+                id: 10,
+                part: 2,
+                partLabel: "Part II: Applied & Thematic (Term 2)",
+                title: "Understanding Data",
+                subtitle: "Weighted averages & statistics",
+                category: "Statistics",
+                icon: "fa-chart-pie",
+                color: "emerald",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_10",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh202.pdf",
+                objectives: "Mean, Median, Mode, weighted mean for groups with different importance weights, histograms, and data variability.",
+                formulas: "Mean x̄ = (∑fᵢxᵢ) / ∑fᵢ\nWeighted Mean = (∑wᵢxᵢ) / ∑wᵢ\nMedian for odd n = ((n+1)/2)th term",
+                tip: "Extreme outliers heavily affect the Mean but do not alter the Median. Choose the right measure of central tendency based on the question context."
+            },
+            {
+                id: 11,
+                part: 2,
+                partLabel: "Part II: Applied & Thematic (Term 2)",
+                title: "The World of Algorithms",
+                subtitle: "Euclid's GCD & step computations",
+                category: "Algorithms",
+                icon: "fa-code",
+                color: "sky",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_11",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh203.pdf",
+                objectives: "Algorithmic thinking, flowchart steps, loop termination, Euclid's Division Algorithm for GCD, and efficiency of calculations.",
+                formulas: "Division Lemma: a = bq + r (0 ≤ r < b)\nGCD(a, b) = GCD(b, r) until remainder r = 0",
+                tip: "The non-zero remainder in the step immediately preceding remainder 0 is the exact GCD (HCF) of the two numbers!"
+            },
+            {
+                id: 12,
+                part: 2,
+                partLabel: "Part II: Applied & Thematic (Term 2)",
+                title: "Quadrilaterals",
+                subtitle: "Midpoint theorem & tiling",
+                category: "Geometry",
+                icon: "fa-vector-square",
+                color: "amber",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_12",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh204.pdf",
+                objectives: "Angle sum property of quadrilaterals (360°), properties of parallelograms, Mid-Point Theorem in triangles, Varignon's theorem, and tessellation.",
+                formulas: "Midpoint Theorem: Line joining midpoints of two sides is parallel to third side & equal to half of it.\nVarignon's Theorem: Connecting midpoints of any quad yields a parallelogram.",
+                tip: "Whenever a question mentions midpoints of two sides of a triangle, immediately think of the Mid-Point Theorem!"
+            },
+            {
+                id: 13,
+                part: 2,
+                partLabel: "Part II: Applied & Thematic (Term 2)",
+                title: "Two Variables, One Line",
+                subtitle: "Linear lines & graph pairs",
+                category: "Algebra",
+                icon: "fa-chart-simple",
+                color: "blue",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_13",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh205.pdf",
+                objectives: "Linear equations in two variables ax + by + c = 0, plotting straight line graphs, geometric meaning of solutions, lines parallel to x and y axes.",
+                formulas: "General Form: ax + by + c = 0\nSlope-intercept: y = mx + c\nEvery point on the line is a solution to the equation.",
+                tip: "A linear equation in two variables has infinitely many solutions. You only need two distinct points to plot the line (use a third point as a check)."
+            },
+            {
+                id: 14,
+                part: 2,
+                partLabel: "Part II: Applied & Thematic (Term 2)",
+                title: "Math of Space: 3D Mensuration",
+                subtitle: "Surface area & volume of 3D solids",
+                category: "Mensuration",
+                icon: "fa-cube",
+                color: "teal",
+                portalUrl: "https://pratapsanjaykumar.github.io/science_9th/math_14",
+                pdfUrl: "https://ncert.nic.in/textbook/pdf/iemh206.pdf",
+                objectives: "Curved and total surface area, volume of cylinders, right circular cones, spheres, and hemispheres, with practical space applications.",
+                formulas: "Cone: CSA = πrl, TSA = πr(l + r), Vol = (1/3)πr²h (where l = √(r² + h²))\nSphere: SA = 4πr², Vol = (4/3)πr³\nCylinder: CSA = 2πrh, TSA = 2πr(r + h), Vol = πr²h",
+                tip: "Pay close attention to units! Surface area is always in square units (cm², m²) and volume is always in cubic units (cm³, m³)."
+            }
+        ];
+
+        let currentFilter = 'all';
+        let searchQuery = '';
+        let completedChapters = JSON.parse(localStorage.getItem('ganita_completed_chapters') || '[]');
+
+        // Compute dynamic academic session (April start: e.g., April 2026 - March 2027 => 2026-27)
+        function initAcademicSession() {
+            const now = new Date();
+            const currentYear = now.getFullYear();
+            const currentMonth = now.getMonth(); // 0-indexed (0 = Jan, 3 = April)
+            
+            // If month is Jan-March, the session belongs to previousYear - currentYear
+            const startYear = currentMonth >= 3 ? currentYear : currentYear - 1;
+            const endYearShort = String((startYear + 1) % 100).padStart(2, '0');
+            const sessionString = `${startYear}-${endYearShort}`;
+
+            document.querySelectorAll('.dynamic-session').forEach(el => {
+                el.innerText = sessionString;
+            });
+        }
+
+        // Initialize portal on DOM Load
+        document.addEventListener('DOMContentLoaded', () => {
+            initAcademicSession();
+            renderChapters();
+            updateProgressCounters();
+            initTheme();
+        });
+
+        // Theme management
+        function initTheme() {
+            if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        }
+
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+
+        // Filter by Term
+        function filterTerm(term) {
+            currentFilter = term;
+            document.getElementById('tab-all').className = term === 'all' ? 'flex-1 md:flex-initial px-4 py-2 rounded-lg text-xs font-bold transition shadow-sm bg-indigo-600 text-white' : 'flex-1 md:flex-initial px-4 py-2 rounded-lg text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition';
+            document.getElementById('tab-part1').className = term === 'part1' ? 'flex-1 md:flex-initial px-4 py-2 rounded-lg text-xs font-bold transition shadow-sm bg-indigo-600 text-white' : 'flex-1 md:flex-initial px-4 py-2 rounded-lg text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition';
+            document.getElementById('tab-part2').className = term === 'part2' ? 'flex-1 md:flex-initial px-4 py-2 rounded-lg text-xs font-bold transition shadow-sm bg-indigo-600 text-white' : 'flex-1 md:flex-initial px-4 py-2 rounded-lg text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition';
+            
+            const headings = {
+                all: '<i class="fa-solid fa-layer-group text-indigo-500"></i> Full Curriculum (All 14 Chapters)',
+                part1: '<i class="fa-solid fa-seedling text-indigo-500"></i> Part I: Foundational Concepts (Chapters 1 to 8)',
+                part2: '<i class="fa-solid fa-cubes text-emerald-500"></i> Part II: Applied & Thematic (Chapters 9 to 14)'
+            };
+            document.getElementById('current-view-heading').innerHTML = headings[term];
+            renderChapters();
+        }
+
+        // Search handler
+        function handleSearch() {
+            const val = document.getElementById('chapter-search').value.toLowerCase().trim();
+            searchQuery = val;
+            const clearBtn = document.getElementById('clear-search-btn');
+            if (val.length > 0) {
+                clearBtn.classList.remove('hidden');
+            } else {
+                clearBtn.classList.add('hidden');
+            }
+            renderChapters();
+        }
+
+        function clearSearch() {
+            document.getElementById('chapter-search').value = '';
+            searchQuery = '';
+            document.getElementById('clear-search-btn').classList.add('hidden');
+            renderChapters();
+        }
+
+        // Toggle chapter completion checkbox
+        function toggleChapterCompletion(chapterId, event) {
+            event.stopPropagation();
+            if (completedChapters.includes(chapterId)) {
+                completedChapters = completedChapters.filter(id => id !== chapterId);
+            } else {
+                completedChapters.push(chapterId);
+            }
+            localStorage.setItem('ganita_completed_chapters', JSON.stringify(completedChapters));
+            updateProgressCounters();
+            renderChapters();
+        }
+
+        // Update top status bar
+        function updateProgressCounters() {
+            const count = completedChapters.length;
+            const percent = Math.round((count / 14) * 100);
+            document.getElementById('progress-percent').innerText = `${percent}% Completed (${count}/14 Chapters)`;
+            document.getElementById('stat-progress-bar').style.width = `${percent}%`;
+            document.getElementById('syllabus-progress-bar').style.width = `${percent}%`;
+        }
+
+        function renderChapters() {
+            const container = document.getElementById('chapters-container');
+            container.innerHTML = '';
+
+            const filtered = chaptersData.filter(ch => {
+                const matchesTerm = currentFilter === 'all' || 
+                                    (currentFilter === 'part1' && ch.part === 1) || 
+                                    (currentFilter === 'part2' && ch.part === 2);
+                const matchesSearch = searchQuery === '' || 
+                                      ch.title.toLowerCase().includes(searchQuery) ||
+                                      ch.subtitle.toLowerCase().includes(searchQuery) ||
+                                      ch.category.toLowerCase().includes(searchQuery) ||
+                                      `ch ${ch.id}`.includes(searchQuery) ||
+                                      `chapter ${ch.id}`.includes(searchQuery);
+                return matchesTerm && matchesSearch;
+            });
+
+            document.getElementById('results-count').innerText = `Showing ${filtered.length} Chapters`;
+
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="col-span-full py-12 text-center bg-white dark:bg-slate-900 rounded-3xl border border-dashed border-slate-300 dark:border-slate-800 space-y-3">
+                        <i class="fa-solid fa-magnifying-glass text-4xl text-slate-300 dark:text-slate-700"></i>
+                        <p class="text-sm font-semibold text-slate-600 dark:text-slate-400">No chapters found matching "${searchQuery}"</p>
+                        <button onclick="clearSearch()" class="px-4 py-2 text-xs font-bold rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition">
+                            Reset Search Filter
+                        </button>
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(ch => {
+                const isDone = completedChapters.includes(ch.id);
+                const card = document.createElement('div');
+                card.className = `chapter-card group relative bg-white dark:bg-slate-900 rounded-3xl p-5 border transition duration-200 shadow-sm hover:shadow-lg flex flex-col justify-between ${
+                    isDone 
+                    ? 'border-emerald-300/80 dark:border-emerald-900/60 bg-emerald-50/20 dark:bg-emerald-950/10' 
+                    : 'border-slate-200/80 dark:border-slate-800 hover:border-indigo-300 dark:hover:border-indigo-700'
+                }`;
+
+                card.innerHTML = `
+                    <div class="space-y-3">
+                        <!-- Top Metadata Row -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="w-8 h-8 rounded-xl bg-indigo-50 dark:bg-indigo-950/80 text-indigo-600 dark:text-indigo-400 font-extrabold text-xs flex items-center justify-center border border-indigo-200/50 dark:border-indigo-800/50">
+                                    Ch ${ch.id}
+                                </span>
+                                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                                    ch.part === 1 
+                                    ? 'bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400' 
+                                    : 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400'
+                                }">
+                                    Part ${ch.part === 1 ? 'I' : 'II'}
+                                </span>
+                                <span class="text-[10px] font-semibold text-slate-400 dark:text-slate-500">
+                                    ${ch.category}
+                                </span>
+                            </div>
+
+                            <!-- Done Checkbox -->
+                            <button onclick="toggleChapterCompletion(${ch.id}, event)" title="${isDone ? 'Mark as incomplete' : 'Mark as complete'}" class="p-1 rounded-lg transition ${
+                                isDone 
+                                ? 'text-emerald-500 hover:text-emerald-600' 
+                                : 'text-slate-300 dark:text-slate-600 hover:text-slate-400'
+                            }">
+                                <i class="${isDone ? 'fa-solid fa-circle-check text-lg' : 'fa-regular fa-circle text-lg'}"></i>
+                            </button>
+                        </div>
+
+                        <!-- Title & Subtitle -->
+                        <div>
+                            <h3 class="text-base font-extrabold text-slate-900 dark:text-white leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">
+                                ${ch.title}
+                            </h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                                ${ch.subtitle}
+                            </p>
+                        </div>
+
+                        <!-- Brief Objectives -->
+                        <div class="bg-slate-50 dark:bg-slate-800/60 rounded-xl p-3 border border-slate-100 dark:border-slate-800 text-[11px] text-slate-600 dark:text-slate-300 line-clamp-2 leading-relaxed">
+                            ${ch.objectives}
+                        </div>
+                    </div>
+
+                    <!-- Direct Action Links (Portal Notes, NCERT PDF, & Overview) -->
+                    <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 space-y-2">
+                        <div class="grid grid-cols-2 gap-2">
+                            <!-- 1. Pratap Sir's Study Notes Link -->
+                            <a href="${ch.portalUrl}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 py-2 px-2.5 rounded-xl bg-indigo-50 hover:bg-indigo-600 text-indigo-700 hover:text-white dark:bg-indigo-950/60 dark:hover:bg-indigo-600 dark:text-indigo-300 dark:hover:text-white text-xs font-bold transition shadow-xs">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> Study Notes
+                            </a>
+
+                            <!-- 2. Direct Official NCERT Chapter PDF Link -->
+                            <a href="${ch.pdfUrl}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 py-2 px-2.5 rounded-xl bg-rose-50 hover:bg-rose-600 text-rose-700 hover:text-white dark:bg-rose-950/60 dark:hover:bg-rose-600 dark:text-rose-300 dark:hover:text-white text-xs font-bold transition shadow-xs">
+                                <i class="fa-solid fa-file-pdf text-[11px]"></i> NCERT PDF
+                            </a>
+                        </div>
+
+                        <!-- 3. Modal Overview Button -->
+                        <button onclick="openModal(${ch.id})" class="w-full py-1.5 px-3 rounded-lg text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200 text-[11px] font-semibold flex items-center justify-center gap-1 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+                            <i class="fa-solid fa-circle-info"></i> Chapter Highlights & Formulas
+                        </button>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function openModal(chapterId) {
+            const ch = chaptersData.find(item => item.id === chapterId);
+            if (!ch) return;
+
+            document.getElementById('modal-term-badge').innerText = ch.partLabel;
+            document.getElementById('modal-title').innerText = `Chapter ${ch.id}: ${ch.title}`;
+            document.getElementById('modal-subtitle').innerText = `${ch.subtitle} • Category: ${ch.category}`;
+            document.getElementById('modal-objectives').innerText = ch.objectives;
+            document.getElementById('modal-formulas').innerText = ch.formulas;
+            document.getElementById('modal-tip').innerText = ch.tip;
+
+            // Update modal action buttons
+            const portalBtn = document.getElementById('modal-portal-btn');
+            portalBtn.href = ch.portalUrl;
+
+            const pdfBtn = document.getElementById('modal-pdf-btn');
+            pdfBtn.href = ch.pdfUrl;
+
+            document.getElementById('chapter-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('chapter-modal').classList.add('hidden');
+        }
+
+        // Close modal on Escape key
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+</html>
